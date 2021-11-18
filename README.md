@@ -10,8 +10,15 @@ This project was created and published by me as part of my learnings at [Lightho
 The server code for this game was not written from scratch. It is a heavily modified version of the single player game [Snek](https://github.com/taniarascia/snek) created by [Tania Rascia](https://github.com/taniarascia). 
 
 ## Instructions
-* ### Clone from repository
-`npm install`
-`npm run play`
+* Clone from repository
+
+```bash
+git clone https://github.com/lighthouse-labs/snek-multiplayer.git
+
+# install and run via npm
+npm install
+npm run play
+```
+* 
 
 
