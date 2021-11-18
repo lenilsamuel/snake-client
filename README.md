@@ -10,7 +10,7 @@ This project was created and published by me as part of my learnings at [Lightho
 The server code for this game was not written from scratch. It is a heavily modified version of the single player game [Snek](https://github.com/taniarascia/snek) created by [Tania Rascia](https://github.com/taniarascia). 
 
 ## Instructions
-* Clone from repository
+* Clone server code from repository
 
 ```bash
 git clone https://github.com/lighthouse-labs/snek-multiplayer.git
@@ -19,6 +19,15 @@ git clone https://github.com/lighthouse-labs/snek-multiplayer.git
 npm install
 npm run play
 ```
-* 
+* Run client server
+```bash
+node client.js
+```
+* Use the **w** key to move the snake up
+* Use the **a** key to move the snake left
+* Use the **s** key to move the snake down
+* Use the **d** key to move the snake right
+* Avoid colliding into the wall or on yourself, or the game ends
+* Press `CTRL + C` to quit the game
 
 
