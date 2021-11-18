@@ -1,6 +1,6 @@
 let connection;
 const {MOVE_UP, MOVE_LEFT, MOVE_DOWN, MOVE_RIGHT, MESSAGES, KEYS} = require('./constants');
-const setupInput = function (conn) {
+const setupInput = (conn) =>  {
   connection = conn;
   const stdin = process.stdin;
   stdin.setRawMode(true);
@@ -11,7 +11,7 @@ const setupInput = function (conn) {
   return stdin;
 }
 
-const handleUserInput = function (key) {
+const handleUserInput = (key) => {
   if (key === "\u0003") {
     process.exit();
   }
@@ -30,8 +30,5 @@ const handleUserInput = function (key) {
   if (KEYS.includes(key)) {
     connection.write(MESSAGES[key]);
   }
-  // if (key === 'm') {
-  //   connection.write(MESSAGES[key]);
-  // }
 }
 module.exports = { setupInput };
