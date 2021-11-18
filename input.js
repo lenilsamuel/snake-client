@@ -12,23 +12,24 @@ const setupInput = (conn) =>  {
 }
 
 const handleUserInput = (key) => {
-  if (key === "\u0003") {
+  let keyCaseInsensitive = key.toLowerCase();
+  if (keyCaseInsensitive === "\u0003") {
     process.exit();
   }
-  if (key === MOVE_UP) {
+  if (keyCaseInsensitive === MOVE_UP) {
     connection.write("Move: up");
   }
-  if (key === MOVE_LEFT) {
+  if (keyCaseInsensitive === MOVE_LEFT) {
     connection.write("Move: left");
   }
-  if (key === MOVE_DOWN) {
+  if (keyCaseInsensitive === MOVE_DOWN) {
     connection.write("Move: down");
   }
-  if (key === MOVE_RIGHT) {
+  if (keyCaseInsensitive === MOVE_RIGHT) {
     connection.write("Move: right");
   }
-  if (KEYS.includes(key)) {
-    connection.write(MESSAGES[key]);
+  if (KEYS.includes(keyCaseInsensitive)) {
+    connection.write(MESSAGES[keyCaseInsensitive]);
   }
 }
 module.exports = { setupInput };
