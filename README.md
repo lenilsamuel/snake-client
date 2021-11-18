@@ -7,7 +7,7 @@ A mini clone of the [Lodash](https://lodash.com) library.
 ## Purpose
 
 ## Credits
-The server code for this game was not written from scratch. It is a heavily modified version of the single player game [Snek] (https://github.com/taniarascia/snek) created by [Tania Rascia] (https://github.com/taniarascia). 
+The server code for this game was not written from scratch. It is a heavily modified version of the single player game [Snek](https://github.com/taniarascia/snek) created by [Tania Rascia](https://github.com/taniarascia). 
 
 **_BEWARE:_ This library was published for learning purposes. It is _not_ intended for use in production-grade software.**
 
